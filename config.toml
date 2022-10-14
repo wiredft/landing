@@ -1,0 +1,44 @@
+baseURL = "/"
+themesDir = "themes"
+languageCode = "en-us"
+title = "WiredFT"
+theme = "hugo-hero-theme"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+    
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "images/wired-logo.png"
+    mobile_height = "29px"
+    mobile_width = "217px"
+    desktop = "images/wired-logo.png"
+    desktop_height = "29px"
+    desktop_width = "217px"
+    alt = "WiredFT"
+
+  [params.homepage_meta_tags]
+    meta_description = "WiredFT - дом для любителей функционального тренинга"
+    meta_og_title = "WiredFT"
+    meta_og_type = "website"
+    meta_og_url = "https://wiredft.com"
+    meta_og_image = ""
+    meta_og_description = "WiredFT - cервис для любителей функционального тренинга, который позволяет выстраивать тренировочный процесс"
+
+[[menu.main]]
+	name = "Возможности"
+	url = "/services/"
+    weight = 1
+
+[[menu.main]]
+    name = "Контакты"
+    url = "/contact/"
+    weight = 2
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
